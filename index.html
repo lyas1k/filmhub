@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<style>
+
+@media  {
+font-size: 1em;
+font-family: monospace;
+color: mediumaquamarine;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Courier New;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: white;
+    cursor: pointer;
+}
+
+header #logo span {
+    font-size: 2.5em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: monospace;
+}
+
+
+@media (min-width: 701px) {
+    #logo {
+      float: left;
+      width: 30%;
+      font-size: 1.1em;
+    }
+
+.fixed{
+  z-index: 5000;
+  background-color: white;
+  border-bottom: 1px solid silver
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 2em;
+    }
+}
+
+header.fixed #logo {
+  color: #343434;
+}
+
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+/* Main part of site*/
+
+#top {
+  width: 100%;
+  height: 1000px;
+  background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1614438574_15-p-temnii-gradient-fon-19.jpg');
+  background-blend-mode: mmentiply;
+  background-size: cover;
+  text-align: center;
+  color: black;
+}
+
+@media (min-width: 1001px){
+  #top {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px){
+  #top {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 650px){
+  #top {
+    font-size: 1.3em;
+    padding-top: 50 %
+  }
+}
+
+
+#top h1 {
+  padding-top: 20%;
+}
+
+#top h3 {
+  color: #ccc;
+}
+
+
+#main  {
+  padding: 1000px 20%;
+
+  background-color: #dimgray;
+  border-top: 2px solid silver;
+  color: black;
+  font-size: 1.3em;
+}
+
+@media (min-width: 1401px){
+  #main {
+    padding: 100px 20%;
+  }
+}
+
+
+
+#mainspan {
+  color: gray;
+  font-family: monospace;
+}
+
+#best {
+  float: left;
+  background-image: url(https://www.desktopbackground.org/download/1366x768/2010/12/18/128349_simple-wallpaper-desktop-light-wallpapers-1906807_1920x1080_h.jpg);
+  background-blend-mode: mmentiply;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+  width:100%;
+  text-align: center;
+}
+
+
+#best h2 {
+  font-size: 4em;
+}
+#best span{
+  color: #ccc;
+  font-size: 1.5em;
+   font-family: monospace;
+}
+
+
+
+
+#best .img{
+  float:left;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+.imgcont img {
+    width: 300px;
+    border-radius: 10px;
+}
+.imgcont img:hover {
+    background: black;
+    width: 350px;
+    transition: 0.3s ease-in-out;
+}
+.title {
+    font-size: 40px;
+}
+.fac {
+    color: rgb(114, 114, 114);
+}
+.other {
+    display: block;
+}
+body {
+    background: rgb(230, 230, 230);
+}
+.toplistitem{
+    margin-top: 50px;
+}
+.topPlace {
+    font-size: 50px;
+    font-weight: 1000;
+    color: darkgrey;
+    top: 0;
+}
+div.col-lg-2 {
+    width: 50px;
+}
+.discr {
+    font-size: 20px;
+}
+
+
+#men {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+
+}
+
+li.dropdown {
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffff;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#contacts {
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  border-top: 3px solid gray;
+  background-color: white;
+}
+
+
+
+#contacts h5 {
+  font-size: 3em;
+  color: black;
+}
+
+#form_input {
+  margin-top: 15px;
+  width: 35%;
+  margin-left: 38%;
+  font-size: 1.1em;
+}
+
+#form_input label {
+  color: #505050;
+  cursor: pointer;
+  font-size: 1.6em;
+  font-family: 'Amatic SC',serif;
+}
+
+#form_input label > span  {
+  color: purple;
+}
+
+#form_input input{
+  margin-bottom: 10px;
+  width: 70%;
+  padding: 10px 2%;
+  border-radius: 7px;
+  border: 2px solid silver;
+  font-size: 0.9em;
+  color: #4a4a4a;
+}
+
+#form_input textarea{
+  margin-bottom: 10px;
+  width: 70%;
+  padding: 10px 2%;
+  border-radius: 7px;
+  border: 2px solid silver;
+  font-size: 0.9em;
+  color: #4a4a4a;
+}
+
+#form_input input:focus{
+  border-color: black;
+}
+
+#form_input textarea:focus{
+  border-color: black;
+}
+
+#about {
+  font-family: 'Amatic SC',serif;
+  font-size: 1em;
+}
+
+.button {
+  float: left;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 1em;
+  background-color: gray;
+  text-shadow: black 0 0 2px;
+  cursor: pointer;
+  color: black;
+  font-family: 'Amatic SC', serif;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+</style>
+
+<head>
+
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Film Hub</span>
+        </div>
+      <men>
+  <li><a href="#" title="Description" style="text-decoration: none;" onclick="slowScroll('#main')">Description</a></li>
+  <li><a href="#best">Best movies</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Genres</a>
+    <div class="dropdown-content">
+      <a href="action.html">Action</a>
+      <a href="comedy.html">Comedies</a>
+
+    </div>
+  </li>
+ 
+</men>
+    </header>
+
+    <div id= "top">
+      <h1> </h1>
+      <h3>2022</h3>
+    </div>
+
+    <div id= "main">
+      <div>
+      <h2> We open for people the diversity of the world of cinema</h2>
+     <br>
+
+    </div>
+    <div class="text">
+    <span>Movie selection on Film-hub.com it will delight you with fresh and box office pictures of 2022. The list of available online movies on the site is constantly updated, representing an inexhaustible source of familiarization with all the latest trends in the world of cinema! Watch free movies in Russian – the ability to download the most up-to-date movies in licensed quality, using our online service at any convenient time and enjoying an impeccable picture and only original voice acting! Do not part with your favorite movies, because to download videos from Film-hub.com it is enough to have access to the Internet and any modern device, including a tablet, TV or even an ordinary smartphone!</span>
+      <br>
+
+  </div>
+    <br>
+  <br>
+
+  <hr>
+  <br>
+  <div class="text">
+ 	 <blockquote >
+ 	 	“WHEN PEOPLE ASK ME IF I WENT TO FILM SCHOOL I TELL THEM, ‘NO, I WENT TO FILMS’.”
+ 	 		<footer>
+ 	 			Quentin Tarantino
+ 	 		</footer>
+ 	 </blockquote>
+	</div>
+
+   </div>
+
+    <div id="best">
+      <h2>Best of 2021</h2>
+
+
+
+      <div class="toplistitem">
+          <div class="container-md">
+              <div class="row">
+                  <div class="col col-lg-2">
+                      <p class="topPlace">1</p>
+                  </div>
+                  <div class="col-md-auto">
+                      <div class="imgcont">
+                          <img src="https://static.kinoafisha.info/k/movie_posters/1080x1920/upload/movie_posters/6/8/5/8356586/acb59318c76683bf3dcb8b7d5e86c7c6.jpg">
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="other">
+                          <p class="title"><strong>Spider-Man: No Way Home</strong></p>
+                          <p class="fac">science fiction, action, adventure
+                              <br>2021, USA
+                          </p>
+                          <p class="discr">For the first time in the Spider-Man movie story, our friendly hero is exposed. Now superhero exploits have become inseparable from his ordinary life. When he asks for help from Dr. Strange, the situation only escalates. And Peter Parker begins to understand what it really means to be Spider-Man.</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+          </div>
+      </div>
+      <div class="toplistitem">
+          <div class="container-md">
+              <div class="row">
+                  <div class="col col-lg-2">
+                      <p class="topPlace">2</p>
+                  </div>
+                  <div class="col-md-auto">
+                      <div class="imgcont">
+                          <img src="https://static.kinoafisha.info/k/movie_posters/1080x1920/upload/movie_posters/1/6/0/8361061/d9eee2b0e80abecde5fb4adc9840c340.jpg">
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="other">
+                          <p class="title"><strong>Luca</strong></p>
+                          <p class="fac">animation, adventure, fantasy
+                              <br>2021, USA
+                          </p>
+                          <p class="discr">A boy named Luca spends his unforgettable holidays, in which there is a place for homemade pasta, ice cream, and endless moped rides, in a beautiful seaside town located on the Italian Riviera. No adventure of Luke is complete without the participation of his new best friend, and the carelessness of the rest is overshadowed only by the fact that in fact, in the guise of a boy, a sea monster is hiding from the depths of the lagoon, on the shore of which the town stands.</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+          </div>
+      </div>
+      <div class="toplistitem">
+          <div class="container-md">
+              <div class="row">
+                  <div class="col col-lg-2">
+                      <p class="topPlace">3</p>
+                  </div>
+                  <div class="col-md-auto">
+                      <div class="imgcont">
+                          <img src="https://static.kinoafisha.info/k/movie_posters/1080x1920/upload/movie_posters/3/1/1/8329113/dd2ec51cdd1ed166721a0ff9eb2963e0.jpg">
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="other">
+                          <p class="title"><strong>Sing 2</strong></p>
+                          <p class="fac">animation, musical
+                              <br>2021, USA
+                          </p>
+                          <p class="discr">It's hard to be a producer when you're a koala and you have paws. It's even more difficult when your whole troupe is a chubby guy dancing non-stop, a prickly punk girl, a shy schoolgirl, a big gangster and a mother with many children whose children are piglets in the literal sense of the word. The recipe for success is simple - to rush to the world capital of entertainment, recruit a legendary rock musician and blow up the stage with a new bomb show! Who said that dreaming is harmful? We see the goal, we do not see obstacles!.</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+          </div>
+      </div>
+      <div class="toplistitem">
+          <div class="container-md">
+              <div class="row">
+                  <div class="col col-lg-2">
+                      <p class="topPlace">4</p>
+                  </div>
+                  <div class="col-md-auto">
+                      <div class="imgcont">
+                          <img src="https://static.kinoafisha.info/k/movie_posters/1080x1920/upload/movie_posters/9/6/3/8356369/844b4eb3b5bd965a08464531a34dfcc6.jpg">
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="other">
+                          <p class="title"><strong>Shang Chi and the Legend of the Ten Rings</strong></p>
+                          <p class="fac">fantasy, action, comedy
+                              <br>2021, USA
+                          </p>
+                          <p class="discr">Martial arts master Shang-Chi will have to confront ghosts from his own past, as he is drawn into the web of intrigues of the mysterious organization "Ten Rings".</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+          </div>
+      </div>
+      <div class="toplistitem">
+          <div class="container-md">
+              <div class="row">
+                  <div class="col col-lg-2">
+                      <p class="topPlace">5</p>
+                  </div>
+                  <div class="col-md-auto">
+                      <div class="imgcont">
+                          <img src="https://static.kinoafisha.info/k/movie_posters/1080x1920/upload/movie_posters/2/5/2/8363252/9a1063b9d1f6c3ae2238ad941cd315e4.jpg">
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="other">
+                          <p class="title"><strong>Louis Wayne's Cat Worlds</strong></p>
+                          <p class="fac">biography, drama, historical
+                              <br>2021, UK
+                          </p>
+                          <p class="discr">An amazing but true story of one of the most unusual artists of all time. The paintings of the eccentric aristocrat Louis Wayne (Benedict Cumberbatch) have one thing in common – he paints exclusively anthropomorphic cats. Thanks to the love of his wife Emily (Claire Foy), Louis forever changes people's view of life and cats. But with each new picture, Louis' bizarre worlds begin to replace reality more and more.</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+          </div>
+      </div>
+      
+  </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+    <script>
+    function slowScroll(id) {
+  $('html, body').animate({
+    scrollTop: $(id).offset().top
+  }, 500);
+}
+
+$(document).on("scroll", function () {
+  if($(window).scrollTop() === 0)
+    $("header").removeClass("fixed");
+  else
+    $("header").attr("class", "fixed");
+});
+</script>
+</body>
+</html>
